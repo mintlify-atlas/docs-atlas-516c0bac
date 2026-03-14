@@ -1,0 +1,101 @@
+{
+  "projectType": "saas",
+  "projectName": "Kids&Us App Versions",
+  "projectDescription": "A comprehensive dashboard for tracking Kids&Us application versions across multiple app stores with automated updates and theme support.",
+  "theme": "almond",
+  "primaryColor": "#e64c64",
+  "lightColor": "#04545b",
+  "darkColor": "#d8836c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "features"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/installation",
+              "getting-started/quickstart",
+              "getting-started/configuration"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/dashboard",
+              "features/data-updates",
+              "features/theme-switching",
+              "features/admin-mode"
+            ]
+          },
+          {
+            "group": "Developer Guide",
+            "pages": [
+              "development/architecture",
+              "development/scrapers",
+              "development/testing",
+              "development/deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/overview",
+              "api/data",
+              "api/update"
+            ]
+          },
+          {
+            "group": "Scrapers",
+            "pages": [
+              "api/scrapers/overview",
+              "api/scrapers/google-play",
+              "api/scrapers/app-store",
+              "api/scrapers/microsoft-store",
+              "api/scrapers/huawei"
+            ]
+          },
+          {
+            "group": "Types & Schemas",
+            "pages": [
+              "api/types",
+              "api/schemas"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Centralized app version tracking dashboard",
+    "Real-time data updates from multiple app stores",
+    "Web scrapers for Google Play, App Store, Microsoft Store, and Huawei AppGallery",
+    "Theme switching (light/dark mode)",
+    "Admin mode for bypassing rate limits",
+    "Internationalization (i18n) support",
+    "Responsive design with modern UI components",
+    "Automated data validation with Zod schemas"
+  ],
+  "publicApiSurface": [
+    "GET /api/data - Retrieve app version data",
+    "POST /api/update - Trigger data update",
+    "ScraperService.scrapeAll() - Scrape all configured apps",
+    "GooglePlayScraper.scrape() - Scrape Google Play Store",
+    "AppStoreScraper.scrape() - Scrape Apple App Store",
+    "MicrosoftStoreScraper.scrape() - Scrape Microsoft Store",
+    "HuaweiScraper.scrape() - Scrape Huawei AppGallery",
+    "ScraperFactory.getScraper() - Get scraper by type"
+  ]
+}
